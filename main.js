@@ -70,12 +70,25 @@ message.textContent="小さい"
 else{
     message.textContent="大きい"
 }
+count++
+
+countDisplay.textContent=`試行回数： ${count}`
+
+
 })
 
 
 
 gameContainer.appendChild(button4)
+
+
+let count = 0
+const countDisplay=document.createElement("p")
+countDisplay.textContent=`試行回数： ${count}`
+gameContainer.appendChild(countDisplay)
+
 }
+
 
 
 startNumberGuessGame();
